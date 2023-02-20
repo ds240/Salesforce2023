@@ -1,0 +1,13 @@
+public class controller1 {
+        Public static List<SelectOption> selectobjectList{get;set;}
+    public controller1(){
+        selectobjectList = new List<SelectOption>();
+        selectobjectList.add(new SelectOption('Account','Account'));
+        selectobjectList.add(new SelectOption('Contact','Contact'));
+    }
+    
+    public pageReference calledFromVF(String str){
+        system.debug('str '+str);
+        return null;
+    }
+}
